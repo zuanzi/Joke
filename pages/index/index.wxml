@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <i-button type="primary" bindtap='getJoke'>点击获取笑话</i-button> -->
+  <view wx:for="{{array}}">
+  <i-card full  extra="喜欢吗">
+  <view slot="content">{{item.content}}</view>
+  <view slot="footer"><icon type="download" size="20"/></view>  
+  </i-card>
+</view>
+<view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view> 
+</view>
